@@ -1,9 +1,3 @@
-<Query Kind="Program">
-  <Output>DataGrids</Output>
-  <Namespace>System.Collections.Concurrent</Namespace>
-  <Namespace>System.Threading.Tasks</Namespace>
-</Query>
-
 private static int _runCount = 0;
 private static readonly ConcurrentDictionary<string, Lazy<string>> _lazyDictionary
 	= new ConcurrentDictionary<string, Lazy<string>>();

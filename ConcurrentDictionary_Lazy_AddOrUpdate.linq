@@ -1,9 +1,3 @@
-<Query Kind="Statements">
-  <Output>DataGrids</Output>
-  <Namespace>System.Threading.Tasks</Namespace>
-  <Namespace>System.Collections.Concurrent</Namespace>
-</Query>
-
  static async Task Method()
 {
 	string key = "code";
