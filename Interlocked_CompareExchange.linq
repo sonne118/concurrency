@@ -1,9 +1,5 @@
-<Query Kind="Statements">
-  <Output>DataGrids</Output>
-  <Namespace>System.Threading.Tasks</Namespace>
-</Query>
 
-//ImmutableArray<int> arr =  ImmutableArray<int>.Empty;
+ImmutableArray<int> arr =  ImmutableArray<int>.Empty;
 
 string[] arr = new string[5000];
 

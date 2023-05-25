@@ -1,7 +1,3 @@
-<Query Kind="Program">
-  <Output>DataGrids</Output>
-  <Namespace>System.Threading.Tasks</Namespace>
-</Query>
 
 static void Main(string[] args)
 {

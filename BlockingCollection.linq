@@ -1,8 +1,3 @@
-<Query Kind="Statements">
-  <Output>DataGrids</Output>
-  <Namespace>System.Collections.Concurrent</Namespace>
-  <Namespace>System.Threading.Tasks</Namespace>
-</Query>
 
 int maxColl = 10;
 var blockingCollection = new BlockingCollection<int>(maxColl);

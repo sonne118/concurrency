@@ -1,8 +1,3 @@
-<Query Kind="Statements">
-  <Output>DataGrids</Output>
-  <Namespace>System.Collections.Immutable</Namespace>
-  <Namespace>System.Threading.Tasks</Namespace>
-</Query>
 
 ImmutableArray<int> arr =  ImmutableArray<int>.Empty;
 
