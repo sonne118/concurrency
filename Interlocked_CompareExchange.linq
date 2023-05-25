@@ -23,8 +23,6 @@ void Add(string a)
 	while (true)
 	{
 		var local = action;
-		// local[arr.Length+1] =a; 
-		//var v = local[arr.Length+1];
 		var v = arr.Append(a).ToArray();	
 		var n = arr.Length - 1;			   	
 		action= Interlocked.CompareExchange<string[] >(ref arr, v, local);
