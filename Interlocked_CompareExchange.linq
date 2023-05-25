@@ -26,13 +26,8 @@ void Add(string a)
 		var local = action;
 		// local[arr.Length+1] =a; 
 		//var v = local[arr.Length+1];
-		var v = arr.Append(a).ToArray();
-
-		//arr.Append(a);
-		//Array.Resize<string>(ref arr, arr.Length + 1);
-		var n = arr.Length - 1;
-		//var l = a;
-		//action= ImmutableInterlocked.InterlockedCompareExchange(ref  arr , value, local);		   	
+		var v = arr.Append(a).ToArray();	
+		var n = arr.Length - 1;			   	
 		action= Interlocked.CompareExchange<string[] >(ref arr, v, local);
 		if (local == action)
 			break;
