@@ -1,7 +1,3 @@
-<Query Kind="Statements">
-  <IncludeUncapsulator>false</IncludeUncapsulator>
-</Query>
-
 
     public class ObjectPool<T> where T : class
     {
