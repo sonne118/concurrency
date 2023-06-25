@@ -1,36 +1,9 @@
-<Query Kind="Program">
-  <Output>DataGrids</Output>
-  <NuGetReference>App.Metrics.AspNetCore</NuGetReference>
-  <NuGetReference>Benchmark.It</NuGetReference>
-  <NuGetReference>BenchmarkDotNet</NuGetReference>
-  <NuGetReference>BenchmarkDotNet.Annotations</NuGetReference>
-  <NuGetReference>BenchmarkDotNet.Diagnostics.Windows</NuGetReference>
-  <NuGetReference>BenchmarkDotNet.Tool</NuGetReference>
-  <NuGetReference>BenchmarkDotNet.Toolchains.Roslyn</NuGetReference>
-  <NuGetReference>Microsoft.AspNetCore.Http</NuGetReference>
-  <NuGetReference>Microsoft.AspNetCore.Http.Features</NuGetReference>
-  <NuGetReference>Microsoft.AspNetCore.Mvc</NuGetReference>
-  <NuGetReference>Microsoft.EntityFrameworkCore</NuGetReference>
-  <NuGetReference>Microsoft.Extensions.Configuration</NuGetReference>
-  <NuGetReference>Microsoft.Extensions.DependencyInjection</NuGetReference>
-  <NuGetReference>Microsoft.Extensions.Http.Polly</NuGetReference>
-  <NuGetReference>NUnitBenchmarker.Benchmark</NuGetReference>
-  <NuGetReference>NUnitLite</NuGetReference>
-  <NuGetReference>System.Threading.Tasks.Dataflow</NuGetReference>
-  <Namespace>BenchmarkDotNet.Attributes</Namespace>
-  <Namespace>BenchmarkDotNet.Running</Namespace>
-  <Namespace>Microsoft.AspNetCore.Builder</Namespace>
-  <Namespace>Microsoft.Extensions.Hosting</Namespace>
-  <Namespace>Microsoft.Extensions.Logging</Namespace>
-  <Namespace>System.Collections.Concurrent</Namespace>
-  <Namespace>System.Threading.Tasks</Namespace>
-  <IncludeAspNet>true</IncludeAspNet>
-</Query>
+using System.Collections.Concurrent;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
 
-void Main()
-{
-	BenchmarkRunner.Run<PoolBenchmark>();
-}
+BenchmarkRunner.Run<PoolBenchmark>();
+
 
 public class ObjectPool<T>
 {
