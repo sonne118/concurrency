@@ -40,9 +40,6 @@ private static async Task DoParse()
 	}
 }
 
-    }
-
-
 	public abstract class AbstractActor<T>
 	{
 		private readonly BufferBlock<T> _mailBox;
