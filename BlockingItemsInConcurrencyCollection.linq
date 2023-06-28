@@ -83,7 +83,7 @@ public class WaiterApi
 				).Unwrap());
 			}
 		}
-
+		
 		try
 		{
 			tasks = await Task.WhenAll(_asyncWaiters);
@@ -116,7 +116,7 @@ public class WaiterApi
 	private async Task<Tmp> Do(Tmp v)
 	{
 		if (v == null)
-		 return await Task.FromException<Tmp>(new Exception());;
+			return await Task.FromException<Tmp>(new Exception()); ;
 
 		Tmp updated = default;
 		updated = v;
