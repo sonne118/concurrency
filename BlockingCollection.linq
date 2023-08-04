@@ -1,3 +1,9 @@
+<Query Kind="Statements">
+  <Namespace>System.Collections.Concurrent</Namespace>
+  <Namespace>System.Threading.Tasks</Namespace>
+  <IncludeUncapsulator>false</IncludeUncapsulator>
+</Query>
+
 int maxColl = 10;
 var blockingCollection = new BlockingCollection<int>(maxColl);
 var taskFactory = new TaskFactory(TaskCreationOptions.LongRunning, TaskContinuationOptions.None);
